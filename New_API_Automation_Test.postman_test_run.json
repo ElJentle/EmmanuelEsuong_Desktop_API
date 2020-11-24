@@ -1,0 +1,267 @@
+{
+	"id": "f01be140-7a34-41c0-96b9-648e7c5a32d1",
+	"name": "New_API_Automation_Test",
+	"timestamp": "2020-11-24T14:30:49.387Z",
+	"collection_id": "e3e335ea-0586-45e3-9afc-983d3c26c64d",
+	"folder_id": 0,
+	"environment_id": "96b54817-ac05-4d01-8180-ba5753280b74",
+	"totalPass": 17,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b3726db5-54d8-49f6-b52e-62b9b89543cd",
+			"name": "Dummy_API_test",
+			"url": "http://dummy.restapiexample.com/api/v1/employees",
+			"time": 2329,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Data should be returned as Tiger Nixon": true,
+				"Status code name has string": true,
+				"Body matches string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Data should be returned as Tiger Nixon": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2329
+			],
+			"allTests": [
+				{
+					"Data should be returned as Tiger Nixon": true,
+					"Status code name has string": true,
+					"Body matches string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "3c7819ad-ffeb-4e20-8305-e908b9c0f639",
+			"name": "Create new record",
+			"url": "http://dummy.restapiexample.com/api/v1/create",
+			"time": 1145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1145
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d3d76413-7460-4724-8e88-fefcd8d243e1",
+			"name": "GET multiple request",
+			"url": "https://reqres.in/",
+			"time": 1072,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Body matches string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1072
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Body matches string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "b8040734-c884-4214-8464-1bf42a77d1b6",
+			"name": "Delete",
+			"url": "https://reqres.in/",
+			"time": 603,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				603
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "664ffc18-9083-43fb-b714-5e502a1e3411",
+			"name": "jsonblog endpoint",
+			"url": "https://reqres.in/api/register",
+			"time": 302,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Body matches string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				302
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Body matches string": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "abeba0e9-305a-40db-b326-30f855fca2d9",
+			"name": "Demo Status",
+			"url": "https://docs.postman-echo.com/",
+			"time": 4182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Body matches string": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4182
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Body matches string": true,
+					"Content-Type is present": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 9633,
+	"collection": {
+		"requests": [
+			{
+				"id": "b3726db5-54d8-49f6-b52e-62b9b89543cd",
+				"method": "GET"
+			},
+			{
+				"id": "3c7819ad-ffeb-4e20-8305-e908b9c0f639",
+				"method": "POST"
+			},
+			{
+				"id": "d3d76413-7460-4724-8e88-fefcd8d243e1",
+				"method": "GET"
+			},
+			{
+				"id": "b8040734-c884-4214-8464-1bf42a77d1b6",
+				"method": "DELETE"
+			},
+			{
+				"id": "664ffc18-9083-43fb-b714-5e502a1e3411",
+				"method": "POST"
+			},
+			{
+				"id": "abeba0e9-305a-40db-b326-30f855fca2d9",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,12 +1,84 @@
 {
 	"info": {
 		"_postman_id": "e3e335ea-0586-45e3-9afc-983d3c26c64d",
-		"name": "New API Automation Test",
+		"name": "New_API_Automation_Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "NewUser",
+			"name": "dummy",
+			"item": [
+				{
+					"name": "Dummy_API_test",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "474e9a7a-207b-4d4b-9362-643ab59af9a4",
+								"exec": [
+									"pm.test(\"Data should be returned as Tiger Nixon\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\\employee_name\\\":\\\"Tiger Nixon\\\"\");\r",
+									"});\r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL_dummy}}/employees",
+							"host": [
+								"{{baseURL_dummy}}"
+							],
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employee_name\": \"Hopper Hegan\",\r\n    \"employee_salary\": \"340200\",\r\n    \"employee_age\": \"41\",\r\n    \"profile_image\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL_dummy}}/create",
+							"host": [
+								"{{baseURL_dummy}}"
+							],
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "reqres.in",
 			"item": [
 				{
 					"name": "GET multiple request",
@@ -65,8 +137,8 @@
 							"script": {
 								"id": "9fd203d2-cae8-46ce-82c0-8a39284bf71e",
 								"exec": [
-									"pm.test(\"Status code is 405\", function () {\r",
-									"    pm.response.to.have.status(405);\r",
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
 									"});\r",
 									""
 								],
@@ -103,7 +175,18 @@
 							"script": {
 								"id": "48453a09-eae8-496d-b225-471637a8aa8b",
 								"exec": [
-									""
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -140,66 +223,51 @@
 			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Demo Status Test 2",
-			"event": [
+			"name": "postman-echo.com",
+			"item": [
 				{
-					"listen": "test",
-					"script": {
-						"id": "21b80562-be85-4894-871a-ecb664174aed",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(201);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
+					"name": "Demo Status",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c67d4022-6193-45ec-95c2-d94a0700d1e7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"\");\r",
+									"});\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://docs.postman-echo.com",
+							"protocol": "https",
+							"host": [
+								"docs",
+								"postman-echo",
+								"com"
+							]
+						}
+					},
+					"response": []
 				}
 			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://docs.postman-echo.com",
-					"protocol": "https",
-					"host": [
-						"docs",
-						"postman-echo",
-						"com"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Demo Status Test",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "c67d4022-6193-45ec-95c2-d94a0700d1e7",
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://docs.postman-echo.com",
-					"protocol": "https",
-					"host": [
-						"docs",
-						"postman-echo",
-						"com"
-					]
-				}
-			},
-			"response": []
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
